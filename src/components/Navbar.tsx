@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 export const Navbar: React.FunctionComponent = () => {
     return (
@@ -7,10 +8,10 @@ export const Navbar: React.FunctionComponent = () => {
                 <a href="#" className="brand-logo">React + TypeScript</a>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
-                        <a href="/">ToDo list</a>
+                        <NavLink to="/">ToDo list</NavLink>
                     </li>
                     <li>
-                        <a href="/">About us</a>
+                        <NavLink to="/about">About us</NavLink>
                     </li>
                 </ul>
             </div>
